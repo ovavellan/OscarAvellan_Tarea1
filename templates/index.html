@@ -22,6 +22,36 @@
             column-gap: 60px;
             justify-content: center;
         }
+
+        /* Estilos para la disposición del pie de página */
+        .pie-pagina {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            padding: 20px;
+            column-gap: 10px;
+        }
+
+        /* Estilos para la disposición del menú de navegación */
+        .nav {
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+
+        /* Estilos para la disposición de la sección de contacto */
+        .contacto {
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+
+        /* Estilos para la disposición del formulario*/
+        .formulario {
+            grid-template-columns: repeat(2, auto);
+        }
+
+        /* Estilos para el tamaño de las etiquetas de título h4*/
+        h4 {
+            font-size: 10px;
+        }
     </style>
 </head>
 
@@ -128,6 +158,112 @@
             <div class="card-body">
                 <h5 class="card-title">ROL DE PENSIÓN JUBILADOS</h5>
                 <p class="card-text">Información detallada de la mensualidad que acredita el IESS.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Botones  -->
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary p-3 mb-2 bg-success text-white" type="button">Ingrese su cuenta</button>
+        <button class="btn btn-primary p-3 mb-2 bg-success text-white" type="button">Consulte citas médicas</button>
+    </div>
+
+    <br>
+    <!-- Blockquote -->
+    <!--Sección de blockquote-->
+    <br><br>
+    <blockquote class="blockquote text-center">
+        <div class="row">
+            <div class="col-xs-12" align="center">
+                <div class="col-md-12" align="center">
+                    <div class="form-group" align="center">
+                        <label class="control-label col-md-12">
+                            <FONT SIZE=6>
+                                <p class="mb-0">Proteger a la población asegurada por el IESS, contra 
+                                    las contingencias que determina la normativa vigente, garantizando 
+                                    el derecho al Buen Vivir</p><cite title="Source Title">IESS - EC</cite>
+                            </FONT>
+                        </label>
+                    </div>
+                </div>
+            </div><br>
+            <center>
+                <div class="nocion">
+                    <img class="izquierda"
+                        src="https://www.deltaglobal.com.ec/wp-content/uploads/2019/11/logo-iess.jpg">
+                    <div class="reset"></div>
+                </div>
+                <footer class="blockquote-footer">Somos parte del Sistema Nacional de Seguridad Social 
+                    y nuestro accionar está fundamentado en los principios de solidaridad, obligatoriedad, 
+                    universalidad, equidad, eficiencia, subsidiaridad y suficiencia. Brindamos protección 
+                    en calidad de afiliados a todas las personas que perciben ingresos por la ejecución de 
+                    una obra o la prestación de su servicio físico o intelectual, con relación laboral o sin 
+                    ella.<cite
+                        title="Source Title">IESS</cite></footer>
+            </center>
+    </blockquote>
+
+    <!-- pie de pagina general -->
+    <div class="pie-pagina">
+
+        <!-- Navegacion del pie de página -->
+        <div class="nav p-3 mb-2 bg-warning text-dark">
+            <div>
+                <h2>Navegación </h2>
+            </div>
+
+            <div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Conózcanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Amisiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-secondary">Formación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección de contactos -->
+        <div class="contacto p-3 mb-2 bg-warning text-dark">
+            <div>
+                <h2>Contáctanos</h2>
+            </div>
+
+            <div>
+                <h3 class="text-secondary">Teléfono</h3>
+                <h4>3828120 </h4>
+                <h3 class="text-secondary">Correo</h3>
+                <h4>alfaroesmil@gmail.com</h4>
+                <h3 class="text-secondary">Dirección</h3>
+                <h4 class="text-left">Av. Manuel Córdova Galarza
+                    (Parcayacu) vía a la Mitad del Mundo</h4>
+
+            </div>
+        </div>
+
+        <!-- Sección de formulario -->
+        <div class="formulario ">
+
+            <div>
+                <h2>Escríbenos</h2>
+            </div>
+
+            <div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escríbenos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
             </div>
         </div>
     </div>
