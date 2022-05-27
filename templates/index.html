@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importación de estilos Boostrap -->
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -12,9 +15,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>IESS</title>
 
     <style>
+        /* Estilos para la disposición de la sección de tarjetas de nuestra página */
         .tarjetas {
             display: grid;
             grid-template-columns: repeat(4, auto);
@@ -56,22 +60,20 @@
 </head>
 
 <body>
+    <!-- Cabecera con logo y título de nuestra página -->
     <center>
         <IMG SRC="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022016/iess_0.png?itok=aYxw9dZA" ALIGN=TOP WIDTH=150 HEIGHT=150>
         <h1 class="text-dark">INSTITUTO ECUATORIANO DE SEGURIDAD SOCIAL "IESS"</h1>
     </center>
 
-    <!-- Barra de navegación  -->
+    <!-- Barra de navegación con estilos boostrap  -->
     <div class="barra-navegación">
         <nav class="navbar navbar-expand-lg bg-light ">
             <div class="container-fluid p-3 mb-2 bg-success text-white">
-                <a class="navbar-brand" href="#">IESS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <a class="navbar-brand" href="#">Inicio</a>
+                <!-- Contenedor para elementos de barra de navegación -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Lista desordenada para elementos de nuestra barra de navegación -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Institución</a>
@@ -90,33 +92,38 @@
                             <a class="nav-link active">Empleador</a>
                         </li>
                     </ul>
+                    <!-- Buscador de nuestra barra de navegación con estilos boostrap-->
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
     </div>
 
-    <!-- Carrusel de fotos -->
+    <!-- Carrusel de fotos con estilos boostrap -->
     <div class="carrusel">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <!-- Importación de imágen para carrusel -->
                     <img src="https://media.primicias.ec/2019/12/30123125/IESS-edificio-3-WEB.jpg" class="d-block w-100"
                         alt="...">
                 </div>
                 <div class="carousel-item">
+                    <!-- Importación de imágen para carrusel -->
                     <img src="https://www.iess.gob.ec/image/image_gallery?uuid=9a015258-0e04-4f9e-9063-9bcaf83832cc&groupId=10174&t=1615321251466"
                         class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
+                    <!-- Importación de imágen para carrusel -->
                     <img src="https://media-exp1.licdn.com/dms/image/C4E1BAQE_s-svb9TWJA/company-background_10000/0/1519798750045?e=2147483647&v=beta&t=_CNgGxzxPnE-BIJpSbVrfdQfPRwj4lQEAIhnZUm3N_E"
                         class="d-block w-100" alt="...">
                 </div>
 
             </div>
+            <!-- Botones para recorrer las imágenes del carrusel con javascript bootstrap -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -133,35 +140,51 @@
     <br>
     <!-- Vista de Tarejetas -->
     <div class="tarjetas">
+
+        <!-- Contenedor de tarjeta con estilos boostrap -->
         <div class="card p-3 mb-2 bg-success text-white" style="width: 18rem;">
+            <!-- importación de imagen para tarjeta -->
             <img src="https://www.iess.gob.ec//images/tramites/cuenta_bancaria.jpg" class="card-img-top" alt="...">
             <div class="card-body">
+                <!-- Título de tarjeta -->
                 <h5 class="card-title">REGISTRO CUENTA BANCARIA</h5>
+                <!-- Texto de tarjeta -->
                 <p class="card-text">Registrar, actualizar y aprobar una cuenta bancaria personal para prestaciones del
                     IESS.</p>
             </div>
         </div>
 
+        <!-- Contenedor de tarjeta con estilos boostrap -->
         <div class="card p-3 mb-2 bg-success text-white" style="width: 18rem;">
+            <!-- importación de imagen para tarjeta -->
             <img src="https://www.iess.gob.ec//images/tramites/historia_laboral.jpg" class="card-img-top" alt="...">
             <div class="card-body">
+                <!-- Título de tarjeta -->
                 <h5 class="card-title">HISTORIA LABORAL</h5>
+                <!-- Texto de tarjeta -->
                 <p class="card-text">Brindar información de la historia laboral del afiliado.</p>
             </div>
         </div>
 
+        <!-- Contenedor de tarjeta con estilos boostrap -->
         <div class="card p-3 mb-2 bg-success text-white" style="width: 18rem;">
+            <!-- importación de imagen para tarjeta -->
             <img src="https://www.iess.gob.ec//images/tramites/jubilacion_vejez.jpg" class="card-img-top" alt="...">
             <div class="card-body">
+                <!-- Título de tarjeta -->
                 <h5 class="card-title">JUVILACIÓN POR VEJEZ</h5>
+                <!-- Texto de tarjeta -->
                 <p class="card-text">Cumplir con el derecho a pensiones mensuales vitalicias a los afiliados.</p>
             </div>
         </div>
 
+        <!-- Contenedor de tarjeta con estilos boostrap -->
         <div class="card p-3 mb-2 bg-success text-white" style="width: 18rem;">
+            <!-- importación de imagen para tarjeta -->
             <img src="https://www.iess.gob.ec//images/tramites/rol_pension.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">ROL DE PENSIÓN JUBILADOS</h5>
+                <!-- Texto de tarjeta -->
                 <p class="card-text">Información detallada de la mensualidad que acredita el IESS.</p>
             </div>
         </div>
@@ -182,8 +205,10 @@
             <div class="col-xs-12" align="center">
                 <div class="col-md-12" align="center">
                     <div class="form-group" align="center">
+                        <!-- Etiqueta para el blockquote con estilos boostrap -->
                         <label class="control-label col-md-12">
                             <FONT SIZE=6>
+                                <!-- Texto para el Blockquote -->
                                 <p class="mb-0">Proteger a la población asegurada por el IESS, contra 
                                     las contingencias que determina la normativa vigente, garantizando 
                                     el derecho al Buen Vivir</p><cite title="Source Title">IESS - EC</cite>
@@ -194,16 +219,19 @@
             </div><br>
             <center>
                 <div class="nocion">
+                    <!-- importación de imagen -->
                     <img class="izquierda"
                         src="https://www.deltaglobal.com.ec/wp-content/uploads/2019/11/logo-iess.jpg">
                     <div class="reset"></div>
                 </div>
+                <!-- footer en el blockquote con estilos bootstrap -->
                 <footer class="blockquote-footer">Somos parte del Sistema Nacional de Seguridad Social 
                     y nuestro accionar está fundamentado en los principios de solidaridad, obligatoriedad, 
                     universalidad, equidad, eficiencia, subsidiaridad y suficiencia. Brindamos protección 
                     en calidad de afiliados a todas las personas que perciben ingresos por la ejecución de 
                     una obra o la prestación de su servicio físico o intelectual, con relación laboral o sin 
                     ella.<cite
+                        <!-- Cita del blockquote -->
                         title="Source Title">IESS</cite></footer>
             </center>
     </blockquote>
@@ -218,18 +246,19 @@
             </div>
 
             <div>
+                <!-- Lista desordenada para la sección de navegación del pie de página -->
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link active text-dark" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Conózcanos</a>
+                        <a class="nav-link text-dark" href="#">Institución</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Amisiones</a>
+                        <a class="nav-link text-dark" href="#">Afiliación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-dark">Formación</a>
+                        <a class="nav-link disabled text-dark">Preguntas Frecuentes</a>
                     </li>
                 </ul>
             </div>
@@ -254,7 +283,7 @@
         </div>
 
         <!-- Sección de formulario -->
-        <div class="formulario ">
+        <form class="formulario ">
 
             <div>
                 <h2>Escríbenos</h2>
@@ -270,7 +299,7 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 

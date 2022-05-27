@@ -8,6 +8,7 @@ app= Flask(__name__, template_folder='templates')
 
 #decorador para definir la ruta raíz e index 
 @app.route('/' )
+#Definicón de la función que mostrará la página en HTML
 def principal():
     return render_template('index.html')
 
