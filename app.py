@@ -9,7 +9,6 @@ app= Flask(__name__, template_folder='templates')
 #decorador para definir la ruta raíz e index 
 @app.route('/' )
 def principal():
-    return "Hola Mundo"
     return render_template('index.html')
 
 
